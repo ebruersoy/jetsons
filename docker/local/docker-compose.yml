@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  jetsons-service-postgres:
+    image: postgres
+    restart: always
+    ports:
+      - 5401:5432
+    environment:
+      - POSTGRES_DB=jetsons
+      - POSRGRES_USER=postgres
+      - POSTGRES_PASSWORD=jetsons
